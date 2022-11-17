@@ -1,7 +1,8 @@
 players = 0
 total_candies = 150
 max_take = 28
-player_take = 0
+player_take = 1
+level = 0
 
 def get_player() -> int:
     global total_candies
@@ -40,3 +41,11 @@ def check_win(count: int):
         return False
     else:
         return True
+
+def set_level(new_value: int):
+    global level
+    level = new_value
+
+def get_level():
+    global level
+    return level
